@@ -335,3 +335,157 @@ textarea {
     color: #333;
     margin-top: 5px;
 }
+
+/* ------------------ responsividad y cambio de navbar versión bootstrap ------------------ */
+
+/* ------ Navbar con bootstrap ------ */
+
+.bg-custom {
+  background-color: #E3B505 !important;
+}
+
+.logo-ana {
+  height: 28px;
+  width: 28px;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  padding: 15px 40px;
+}
+
+.navbar-nav {
+  gap: 30px;
+}
+
+.nav-link {
+  color: #000 !important;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #333 !important;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(0.2);
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    /* Responsivo */
+    .gallery,
+    .gallery-2 {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .gallery-item,
+    .gallery-item-2 {
+        border-radius: 16px;
+    }
+
+    .gallery-item p {
+        font-size: 15px;
+    }
+
+    /* contacto */
+
+    .contact-flexbox {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .left-two-columns h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .left-two-columns p {
+        font-size: 16px;
+    }
+
+    .media-list li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .media-list img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .right-two-columns {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-contact {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group input,
+    .form-group select,
+    textarea {
+        font-size: 15px;
+    }
+}
+
+/* footer */
+
+footer {
+    padding: 20px 0;
+}
+
+.footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer p {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
