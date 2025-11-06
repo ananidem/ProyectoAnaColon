@@ -1,0 +1,27 @@
+// _footer.scss
+footer {
+  background: #22282b;
+  padding: 20px 0;
+
+  .footer {
+    list-style: none;
+    padding: 15px 40px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    p {
+      color: white;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// _responsive.scss
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
+    padding: 30px 20px;
+
+    .left-two-columns {
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  footer .footer {
+    gap: 20px;
+
+    p {
+      font-size: 15px;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

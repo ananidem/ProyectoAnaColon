@@ -1,115 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <title>Servicios</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios | Ana Colón</title>
+  <meta name="description" content="Servicios — Branding, Diseño Web y Diseño UX|UI ofrecidos por Ana Colón." />
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Shrikhand&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-    <header>
-        <!-- Menú bootstrap nuevo -->
-        <nav class="navbar navbar-expand-lg bg-custom">
-            <div class="container-fluid">
+  <header role="banner">
+    <nav class="navbar navbar-expand-lg bg-custom" aria-label="Menú principal">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="imgs/logo ana.png" alt="Logo Ana Colón" class="logo-ana" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <a class="navbar-brand" href="/index.html">
-                    <img src="imgs/logo ana.png" alt="logo" class="logo-ana">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/experiencia.html">Experiencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/trabajos.html">Trabajos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- NAV BAR VIEJA -->
-        <!-- <nav class="nav-bar">
-            <ul class="nav-links">
-                <li><img class="logo-ana" src="imgs/logo ana.png" alt="logo"></li>
-                <li><a class="active" href="/index.html">Home</a></li>
-                <li> <a href="/experiencia.html">Experiencia</a></li>
-                <li><a href="/trabajos.html">Trabajos</a></li>
-                <li><a href="/servicios.html">Servicios</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-            </ul>
-        </nav> -->
-    </header>
-
-    <main>
-        <div class="middle-tittle">
-            <h2>Servicios</h2>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="trabajos.html">Trabajos</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <div class="gallery-2">
-            <div class="gallery-item-2">
-                <img src="imgs/branding.jpg" alt="Imagen 1">
-                <p>Branding</p>
-            </div>
-            <div class="gallery-item-2">
-                <img src="imgs/web.jpg" alt="Imagen 2">
-                <p>Diseño Web</p>
-            </div>
-            <div class="gallery-item-2">
-                <img src="imgs/ux.jpg" alt="Imagen 3">
-                <p>Diseño UX | UI</p>
-            </div>
-        </div>
+  <main role="main">
+    <div class="middle-tittle"><h2>Servicios</h2></div>
 
-        <div class="btn-central">
-            <a href="/contacto.html" class="btn">Cotizar proyecto</a>
-        </div>
+    <section class="gallery-2" aria-label="Servicios ofrecidos">
+      <div class="gallery-item-2">
+        <img src="imgs/branding.jpg" alt="Branding y diseño de identidad" loading="lazy" />
+        <p>Branding</p>
+      </div>
 
-    </main>
-    <footer>
-        <ul class="footer">
-            <li>
-                <p>Contacto</p>
-            </li>
-            <a href="https://wa.me/5539583562" target="_blank">
-                <li><img class="wa" src="/imgs/wa.png" alt="Teléfono"></li>
-            </a>
-            <a href="https://https://www.instagram.com/anitanidem/" target="_blank">
-                <li><img class="ig" src="/imgs/ig.png" alt="Instagram"></li>
-            </a>
-            <a href="https://linkedin.com/in/ananidem" target="_blank">
-                <li><img class="linkedin" src="/imgs/linkedin.png" alt="Linkedin"></li>
-            </a>
-            <a href="mailto:anakarencolonm@gmail.com" target="_blank">
-                <li><img class="mail" src="/imgs/mail.png" alt="Mail"></li>
-            </a>
-        </ul>
-    </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="gallery-item-2">
+        <img src="imgs/web.jpg" alt="Diseño web responsivo" loading="lazy" />
+        <p>Diseño Web</p>
+      </div>
+
+      <div class="gallery-item-2">
+        <img src="imgs/ux.jpg" alt="Diseño UX y UI" loading="lazy" />
+        <p>Diseño UX | UI</p>
+      </div>
+    </section>
+
+    <div class="btn-central"><a href="contacto.html" class="btn">Cotizar proyecto</a></div>
+  </main>
+
+  <footer role="contentinfo">
+    <ul class="footer">
+      <li><p>Contacto</p></li>
+      <li><a href="https://wa.me/5539583562" target="_blank" rel="noopener"><img class="wa" src="imgs/wa.png" alt="WhatsApp" /></a></li>
+      <li><a href="https://www.instagram.com/anitanidem/" target="_blank" rel="noopener"><img class="ig" src="imgs/ig.png" alt="Instagram" /></a></li>
+      <li><a href="https://linkedin.com/in/ananidem" target="_blank" rel="noopener"><img class="linkedin" src="imgs/linkedin.png" alt="LinkedIn" /></a></li>
+      <li><a href="mailto:anakarencolonm@gmail.com" target="_blank" rel="noopener"><img class="mail" src="imgs/mail.png" alt="Correo electrónico" /></a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
